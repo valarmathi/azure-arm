@@ -19,7 +19,7 @@ steps:
     resourceGroupName: 'cpg-dnd'
     location: 'Central US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/valarmathi/azure-arm/main/CreateWebApp/azuredeploy.json?token=GHSAT0AAAAAAB2XF2DMMAZAXYXQXOEACUJIY3TQIXQ'
+    csmFileLink: 'https://raw.githubusercontent.com/valarmathi/azure-arm/main/CreateWebApp/azuredeploy.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DevopsVM'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
