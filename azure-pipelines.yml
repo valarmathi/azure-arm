@@ -16,7 +16,7 @@ pool:
   vmImage: ubuntu-latest
   
 steps:
-- bash: echo $(subscriptionId)
+- bash: echo '-adminUsername ValarVM -authenticationType password -adminPasswordOrKey SnowUser@2022!Galaxy -vmName valarvm001 -networkSecurityGroupName valarvm001-group'
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
