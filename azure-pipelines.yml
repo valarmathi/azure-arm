@@ -24,10 +24,10 @@ steps:
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'azure-cpg-test'
-    subscriptionId: '29c1ad9f-091e-48a2-9184-01a489833f34'
+    subscriptionId: $(subscriptionId)
     action: 'Create Or Update Resource Group'
     resourceGroupName: $(resourceGroupName)
-    location: 'Central US'
+    location: $(location)
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/valarmathi/azure-arm/main/CreateWebApp/azuredeploy.json'
     deploymentMode: 'Incremental'
