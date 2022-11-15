@@ -5,7 +5,7 @@
 
 variables:
   subscriptionId: '29c1ad9f-091e-48a2-9184-01a489833f34'
-  resourceGroupName: 'cpg-remove-it'
+  resourceGroupName: 'cpg-dnd'
   location: 'Central US'
   adminUsername: 'ValarVM'
   authenticationType: 'password'
@@ -20,7 +20,6 @@ pool:
   vmImage: ubuntu-latest
   
 steps:
-- bash: echo '-adminUsername $(adminUsername) -authenticationType $(authenticationType) -adminPasswordOrKey $(adminPasswordOrKey) -vmName $(vmName) -networkSecurityGroupName $(networkSecurityGroupName)'
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
