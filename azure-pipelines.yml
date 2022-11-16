@@ -10,8 +10,8 @@ variables:
   adminUsername: 'ValarVM'
   authenticationType: 'password'
   adminPasswordOrKey: 'SnowUser@2022!Galaxy'
-  vmName: 'valarvm001'
-  networkSecurityGroupName: 'valarvm001-group'
+  vmName: 'valarvm002-vm'
+  networkSecurityGroupName: 'valarvm002-group'
 
 trigger:
 - main
