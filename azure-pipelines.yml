@@ -4,7 +4,6 @@
 # https://aka.ms/yaml
 
 variables:
-  subscriptionId: '29c1ad9f-091e-48a2-9184-01a489833f34'
   resourceGroupName: 'cpg-dnd'
   location: 'Central US'
   adminUsername: 'ValarVM'
