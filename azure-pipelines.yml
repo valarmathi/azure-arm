@@ -46,6 +46,6 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: '$(artifact_name)'
+    ArtifactName: 'drop'
     publishLocation: 'Container'
   condition: succeeded()
