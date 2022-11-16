@@ -215,6 +215,9 @@
       "apiVersion": "2021-11-01",
       "name": "[parameters('vmName')]",
       "location": "[parameters('location')]",
+      "tags": {
+        "deployment-id": "[parameters('vmName')]"
+      }
       "properties": {
         "hardwareProfile": {
           "vmSize": "[parameters('vmSize')]"
