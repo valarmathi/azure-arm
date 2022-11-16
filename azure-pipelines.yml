@@ -12,6 +12,7 @@ variables:
   adminPasswordOrKey: 'SnowUser@2022!Galaxy'
   vmName: 'valarvm002-vm'
   networkSecurityGroupName: 'valarvm002-group'
+  subnetName: 'valarsubnet001'
 
 trigger:
 - main
