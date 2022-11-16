@@ -3,6 +3,16 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+variables:
+  subscriptionId: '29c1ad9f-091e-48a2-9184-01a489833f34'
+  resourceGroupName: 'cpg-dnd'
+  location: 'Central US'
+  adminUsername: 'ValarVM'
+  authenticationType: 'password'
+  adminPasswordOrKey: 'SnowUser@2022!Galaxy'
+  vmName: 'valarvm001'
+  networkSecurityGroupName: 'valarvm001-group'
+
 trigger:
 - main
 
@@ -14,15 +24,15 @@ steps:
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'azure-cpg-test'
-    subscriptionId: '29c1ad9f-091e-48a2-9184-01a489833f34'
+    subscriptionId: $(subscriptionId)
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'cpg-dnd'
-    location: 'Central US'
+    resourceGroupName: $(resourceGroupName)
+    location: $(location)
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/valarmathi/azure-arm/main/CreateWebApp/azuredeploy.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DevopsVM'
-    overrideParameters: '-adminUsername ValarVM -authenticationType password -adminPasswordOrKey SnowUser@2022!Galaxy -vmName valarvm001 -networkSecurityGroupName valarvm001-group'
+    overrideParameters: '-adminUsername $(adminUsername) -authenticationType $(authenticationType) -adminPasswordOrKey $(adminPasswordOrKey) -vmName $(vmName) -networkSecurityGroupName $(networkSecurityGroupName)'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
