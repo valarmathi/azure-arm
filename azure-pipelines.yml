@@ -3,17 +3,17 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-variables:
-  subscriptionId: '29c1ad9f-091e-48a2-9184-01a489833f34'
-  resourceGroupName: 'cpg-dnd'
-  location: 'Central US'
-  adminUsername: 'ValarVM'
-  authenticationType: 'password'
-  adminPasswordOrKey: 'SnowUser@2022!Galaxy'
-  vmName: 'valarvm002-vm'
-  networkSecurityGroupName: 'valarvm002-group'
-  subnetName: 'valarsubnet001'
-  virtualNetworkName: 'valar-vm'
+#variables:
+#  subscriptionId: '29c1ad9f-091e-48a2-9184-01a489833f34'
+#  resourceGroupName: 'cpg-dnd'
+#  location: 'Central US'
+#  adminUsername: 'ValarVM'
+#  authenticationType: 'password'
+#  adminPasswordOrKey: 'SnowUser@2022!Galaxy'
+#  vmName: 'valarvm002-vm'
+#  networkSecurityGroupName: 'valarvm002-group'
+#  subnetName: 'valarsubnet001'
+#  virtualNetworkName: 'valar-vm'
 
 trigger:
 - main
