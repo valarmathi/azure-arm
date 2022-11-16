@@ -13,6 +13,7 @@ variables:
   vmName: 'valarvm002-vm'
   networkSecurityGroupName: 'valarvm002-group'
   subnetName: 'valarsubnet001'
+  virtualNetworkName: 'valar-vm'
 
 trigger:
 - main
