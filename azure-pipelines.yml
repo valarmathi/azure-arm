@@ -34,7 +34,7 @@ steps:
     csmFileLink: 'https://raw.githubusercontent.com/valarmathi/azure-arm/main/CreateWebApp/azuredeploy.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DevopsVM'
-    overrideParameters: '-adminUsername $(adminUsername) -authenticationType $(authenticationType) -adminPasswordOrKey $(adminPasswordOrKey) -vmName $(vmName) -networkSecurityGroupName $(networkSecurityGroupName)'
+    overrideParameters: '-adminUsername $(adminUsername) -authenticationType $(authenticationType) -adminPasswordOrKey $(adminPasswordOrKey) -vmName $(vmName) -networkSecurityGroupName $(networkSecurityGroupName) -subnetName $(subnetName)'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
